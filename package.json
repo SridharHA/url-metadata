@@ -1,0 +1,22 @@
+{
+  "name": "metadata-lambda",
+  "version": "1.0.0",
+  "description": "Serverless Template for Metadata Lambda function",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true --timeout 20000",
+    "testcoverage": "nyc mocha './*/*.test.js'",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url-metadata": "^2.5.0",
+    "aws-sdk-mock": "^5.1.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "serverless-pseudo-parameters": "^2.5.0",
+    "sinon": "^10.0.0"
+  }
+}

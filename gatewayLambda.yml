@@ -1,0 +1,11 @@
+gatewayLambda:
+    handler: index.handler
+    name: metadata-lambda
+    description: Lambda function for metadata
+    role: arn:aws:iam::#{AWS::AccountId}:role/lambda_role
+    maximumRetryAttempts: 0
+    events:
+      - http:
+          path: signup
+          method: post
+          cors: true
